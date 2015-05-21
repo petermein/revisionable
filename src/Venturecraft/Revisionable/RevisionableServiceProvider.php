@@ -2,6 +2,14 @@
 
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 
+
+/**
+ * RevisionsableServiceProvider
+ *
+ * Instantitates the revisionable package
+ *
+ * (c) Venture Craft <http://www.venturecraft.com.au>
+ */
 class RevisionableServiceProvider extends LaravelServiceProvider {
 
     /**
@@ -53,8 +61,10 @@ class RevisionableServiceProvider extends LaravelServiceProvider {
     }
 
     private function handleMigrations() {
-
-        $this->publishes([__DIR__ . '/../../migrations' => base_path('database/migrations')]);
+        date('Y_m_d_His');
+        $this->publishes([
+            __DIR__ . '/../../migrations' => base_path('database/migrations')
+        ], 'migrations');
     }
 
 }

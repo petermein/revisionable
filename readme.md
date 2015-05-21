@@ -7,6 +7,8 @@
     <img src="http://img.shields.io/packagist/dt/venturecraft/revisionable.svg?style=flat" style="vertical-align: text-top">
 </a>
 
+#Fork for Laravel 5
+
 Wouldn't it be nice to have a revision history for any model in your project, without having to do any work for it. By simply extending revisionable from your model, you can instantly have just that, and be able to display a history similar to this:
 
 * Chris changed title from 'Something' to 'Something else'
